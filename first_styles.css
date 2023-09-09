@@ -19,7 +19,6 @@ header {
     grid-template-columns: max-content 1fr;
     column-gap: 20px;
     align-items: center;
-    align-content: right;
     padding: 15px;
 }
 
