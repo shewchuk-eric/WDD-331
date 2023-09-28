@@ -1,0 +1,71 @@
+body {
+  background-color: darkred;
+  margin: 2rem auto;
+}
+@media (max-width: 60em) {
+  body {
+    width: 70%;
+    max-width: 900px;
+  }
+}
+@media (max-width: 31em) {
+  body {
+    width: 80%;
+    max-width: 700px;
+  }
+}
+@media (max-width: 20em) {
+  body {
+    width: 100%;
+    max-width: 500px;
+  }
+}
+
+h1 {
+  color: white;
+}
+
+#contactform {
+  background-color: rgb(231, 205, 165);
+}
+#contactform input, #contactform textarea {
+  background-color: white;
+  flex: 2;
+  margin: 1rem auto;
+}
+
+@media (max-width: 60em) {
+  fieldset > div {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+  }
+}
+@media (max-width: 31em) {
+  fieldset > div {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+  }
+}
+@media (max-width: 20em) {
+  fieldset > div {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-flow: row nowrap;
+    -ms-flex-flow: row nowrap;
+    flex-flow: row nowrap;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
