@@ -27,7 +27,7 @@ $break-large: 60em;
     margin-right: auto;
   }
 
-  @mixin breakpoint($break) {
+@mixin breakpoint($break) {
     @if $break == large {
         @media (max-width: $break-large) { @content; }
     }
@@ -37,15 +37,22 @@ $break-large: 60em;
     @else if $break == small {
         @media (max-width: $break-small) { @content; }
     }
-    }
+}
+
+// page styles
+html {
+    background-color: black;
+}
     
 body {
     background-color: $body-bg;
     margin: 2rem auto;
-    @include breakpoint(large) {width: 70%; max-width: 900px;}
-    @include breakpoint(medium) {width: 80%; max-width: 700px;}
-    @include breakpoint(small) {width: 100%; max-width: 500px;}
+    padding: 3rem;
+    @include breakpoint(large) {width: 70%;}
+    @include breakpoint(medium) {width: 80%;}
+    @include breakpoint(small) {width: 100%;}
 }
+/* max-width: 900px; max-width: 700px; max-width: 500px;  */
 
 h1 {
     color: $headlines;
@@ -57,7 +64,7 @@ h1 {
         background-color: $input;
         flex: 2;
         margin: 1rem auto;
-        }
+    }
 } 
 
 fieldset > div {
