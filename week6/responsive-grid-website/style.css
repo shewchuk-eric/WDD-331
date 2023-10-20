@@ -7,6 +7,8 @@
 */
 :root {
     --yellow: #ffc600;
+    --orange: #ff8800;
+    --red: #ff3c00;
     --black: #272727;
   }
   
@@ -35,7 +37,7 @@
   
   body {
     background-image: url("./images/topography.svg"),
-      linear-gradient(110deg, #f93d66, #6d47d9);
+      linear-gradient(110deg, #3d69f9, #5b3fa7);
     background-size: 340px, auto;
     min-height: calc(100vh - 100px);
     margin: 50px;
