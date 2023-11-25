@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Recursive:slnt,wght,CASL,CRSV,MONO@-15..0,300..800,0..1,0..1,0..1&display=swap');
+
+:root {
+    --ratio: 1.5;
+    --s-5: calc(var(--s-4) / var(--ratio));
+    --s-4: calc(var(--s-3) / var(--ratio));
+    --s-3: calc(var(--s-2) / var(--ratio));
+    --s-2: calc(var(--s-1) / var(--ratio));
+    --s-1: calc(var(--s0) / var(--ratio));
+    --s0: 1rem;
+    --s1: calc(var(--s0) * var(--ratio));
+    --s2: calc(var(--s1) * var(--ratio));
+    --s3: calc(var(--s2) * var(--ratio));
+    --s4: calc(var(--s3) * var(--ratio));
+    --s5: calc(var(--s4) * var(--ratio));
+  
+    --font-color: #1d1d1d;
+    /* set variation axis values */
+    --mono: "MONO" 0; /* Monospace: Sans (natural-width) or Mono (fixed-width) */
+    --casl: "CASL" 0; /* Casual: Linear to Casual */
+    --wght: 300; /* Weight: Light to ExtraBlack; usually set with `font-weight` */
+    --slnt: 0deg; /* Slant: 0 to -15 degrees, auto cursive at -14 */
+    --crsv: "CRSV" 0.5; /* Cursive: always roman (0), auto substitution (.5), or always cursive (1) */
+}
+
+* {
+    font-weight: var(--wght);
+    font-variation-settings: var(--mono), var(--casl), var(--crsv);
+}
+html {
+    font-size: 18px;
+    background-color: rgba(250, 235, 215, 0.758);
+    
+}
+body {
+    color: var(--font-color);
+    font-family: Recursive, sans-serif;
+    width: 800px;
+    background-color: white;
+    padding: 2rem;
+    margin: 0 auto;
+    border: 1px solid var(--font-color);
+    position: relative;
+}
+
+h1 {
+    font-size: var(--s2);
+}
+
+h2 {
+    font-size: var(--s1);
+}
+
+h1, h2 {
+    --wght: 600;
+    --casl: "CASL" 0;
+    margin-top: var(--s2);
+    margin-bottom: 0;
+}
+
+p, ul {
+    line-height: var(--s1);
+    margin: var(--s1);
+    --crsv: "CRSV" 0;
+    max-width: 66ch;
+}
+
+.chapter {
+    display: block;
+    border-bottom: 2px dotted var(--font-color);
+}
+
+.mono {
+    --mono: "MONO" 1;
+    --wght: 500;
+}
+
+.mono-bold {
+    --mono: "MONO" 1;
+    --wght: 700;
+}
+
+.caps {
+    --mono: "MONO" 1;
+    --wght: 500;
+    text-transform: uppercase;
+}
+
+.tips {
+    width: 100%;
+    height: 130px;
+}
+
+.alert {
+    position: absolute;
+    margin: 1.2rem 0 1.2rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 130px;
+    width: 130px;
+    background-image: url('burst.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-right: 1px solid var(--font-color);
+    --mono: "MONO" 1;
+    --wght: 800;
+}
+
+blockquote {
+    position: relative;
+    left: 6rem;
+    display: inline-block;
+    margin-top: 1.5rem;
+    max-width: 66ch;
+    font-size: 15px;
+}
+
+ul {
+    list-style-type: "⩥";
+    list-style-position: outside;
+}
+
+li {
+    padding-left: 1rem;
+}
+
+.bold {
+    --wght: 700;
+}
